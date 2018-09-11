@@ -1,0 +1,47 @@
+/* @import url("./components/pages/header/header.css");
+@import url("./components/pages/customerform/customerform.css");
+@import url("./components/pages/login/login.css");
+@import url("./components/pages/dashboard/dashboard.css");
+@import url("./components/pages/success/success.css");
+@import url("./components/pages/home/home.css");
+@import url("./components/pages/recorditem/recorditem.css");
+
+ */
+
+@font-face {
+  font-family: 'swissNormal';
+  src: url('./fonts/swiss-fonts/swiss.eot');
+  src: url('./fonts/swiss-fonts/swiss.eot?#iefix') format('embedded-opentype'), url('./fonts/swiss-fonts/swiss.woff') format('woff'), url('./fonts/swiss-fonts/swiss.ttf') format('truetype'), url('./fonts/swiss-fonts/swiss.svg#swiss') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'swissLight';
+  src: url('./fonts/swiss-fonts/swissl.eot');
+  src: url('./fonts/swiss-fonts/swissl.eot?#iefix') format('embedded-opentype'), url('./fonts/swiss-fonts/swissl.woff') format('woff'), url('./fonts/swiss-fonts/swissl.ttf') format('truetype'), url('./fonts/swiss-fonts/swissl.svg#swiss') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+ @font-face {
+  font-family: 'swissBold';
+  src: url('./fonts/swiss-fonts/swissb.eot');
+  src: url('./fonts/swiss-fonts/swissb.eot?#iefix') format('embedded-opentype'), url('./fonts/swiss-fonts/swissb.woff') format('woff'), url('./fonts/swiss-fonts/swissb.ttf') format('truetype'), url('./fonts/swiss-fonts/swissb.svg#swiss') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'swissNormal';
+  font-size: 14px!important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #21232c;
+}
+
+html body {
+  height: 100vh;
+  color: white;
+}

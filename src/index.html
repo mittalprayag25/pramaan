@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#000000">
+
+  <title>Digi Praman</title>
+
+  <script type="text/javascript">
+    function preventBack() {
+      history.pushState(null, null, location.href);
+      window.onpopstate = function () {
+        history.go(1);
+      }
+    }
+    preventBack();
+  </script>
+
+</head>
+
+<body>
+  <div id="app"></div>
+
+  <div class="backgroundCont displayNone">
+    <div class="backgroundDark">
+      <div class="loading">
+        <!-- We make this div spin -->
+        <div class="spinner">
+          <!-- Mask of the quarter of circle -->
+          <div class="mask">
+            <!-- Inner masked circle -->
+            <div class="maskedCircle"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <style>
+    .displayNone {
+      display: none !important;
+    }
+
+    @keyframes spin {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    .backgroundDark {
+      position: absolute;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 99999999;
+      height: 911px;
+      min-height: 100%;
+      background-color: black;
+      opacity: 0.45;
+    }
+
+    .loading {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 28px;
+      height: 28px;
+      margin: -14px 0 0 -14px;
+    }
+
+    .loading .maskedCircle {
+      width: 20px;
+      height: 20px;
+      border-radius: 12px;
+      border: 3px solid #fff;
+    }
+
+    .loading .mask {
+      width: 12px;
+      height: 12px;
+      overflow: hidden;
+    }
+
+    .loading .spinner {
+      position: absolute;
+      left: 1px;
+      top: 1px;
+      width: 26px;
+      height: 26px;
+      animation: spin 1s infinite linear;
+    }
+  </style>
+  <script src="./bundle.js"></script>
+</body>
+
+</html>

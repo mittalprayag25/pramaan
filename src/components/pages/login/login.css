@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    color: blanchedalmond;
+    display: flex;
+    font-size: 40px;
+    justify-content: center;
+}
+.optionButton{
+    margin: 10px;
+    color: #21232c;
+    padding: 12px;
+    border-radius: 14px;
+}
+.loginContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    flex-direction: column;
+    height: 100vh;
+}
